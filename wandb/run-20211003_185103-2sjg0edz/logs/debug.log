@@ -1,0 +1,38 @@
+2021-10-03 18:51:03,987 INFO    MainThread:265411 [wandb_setup.py:_flush():69] setting env: {}
+2021-10-03 18:51:03,988 INFO    MainThread:265411 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-10-03 18:51:03,988 INFO    MainThread:265411 [wandb_init.py:_log_setup():342] Logging user logs to /home/indika/Programming/Projects/Python/Artifical-Intelligence/PyTorch/NLP/Twitter-Sentiment-Analysis-V2/wandb/run-20211003_185103-2sjg0edz/logs/debug.log
+2021-10-03 18:51:03,988 INFO    MainThread:265411 [wandb_init.py:_log_setup():343] Logging internal logs to /home/indika/Programming/Projects/Python/Artifical-Intelligence/PyTorch/NLP/Twitter-Sentiment-Analysis-V2/wandb/run-20211003_185103-2sjg0edz/logs/debug-internal.log
+2021-10-03 18:51:03,988 INFO    MainThread:265411 [wandb_init.py:_jupyter_setup():294] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fc60f719810>
+2021-10-03 18:51:03,989 INFO    MainThread:265411 [wandb_init.py:init():375] calling init triggers
+2021-10-03 18:51:03,989 INFO    MainThread:265411 [wandb_init.py:init():382] wandb.init called with sweep_config: {}
+config: {}
+2021-10-03 18:51:03,989 INFO    MainThread:265411 [wandb_init.py:init():424] starting backend
+2021-10-03 18:51:03,989 INFO    MainThread:265411 [backend.py:_multiprocessing_setup():72] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-10-03 18:51:04,003 INFO    MainThread:265411 [backend.py:ensure_launched():135] starting backend process...
+2021-10-03 18:51:04,012 INFO    MainThread:265411 [backend.py:ensure_launched():140] started backend process with pid: 273457
+2021-10-03 18:51:04,013 INFO    MainThread:265411 [wandb_init.py:init():429] backend started and connected
+2021-10-03 18:51:04,062 INFO    MainThread:265411 [wandb_run.py:_label_probe_notebook():815] probe notebook
+2021-10-03 18:51:04,062 INFO    MainThread:265411 [wandb_init.py:init():477] updated telemetry
+2021-10-03 18:51:04,063 INFO    MainThread:265411 [wandb_init.py:init():500] communicating current version
+2021-10-03 18:51:04,832 INFO    MainThread:265411 [wandb_init.py:init():505] got version response upgrade_message: "wandb version 0.12.3 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2021-10-03 18:51:04,833 INFO    MainThread:265411 [wandb_init.py:init():513] communicating run to backend with 30 second timeout
+2021-10-03 18:51:04,909 WARNING MainThread:265411 [wandb_init.py:init():795] interrupted
+Traceback (most recent call last):
+  File "/home/indika/anaconda3/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 775, in init
+    run = wi.init()
+  File "/home/indika/anaconda3/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 514, in init
+    ret = backend.interface.communicate_run(run, timeout=30)
+  File "/home/indika/anaconda3/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 661, in communicate_run
+    return self._communicate_run(run, timeout=timeout)
+  File "/home/indika/anaconda3/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 649, in _communicate_run
+    resp = self._communicate(req, timeout=timeout)
+  File "/home/indika/anaconda3/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 539, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/indika/anaconda3/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 77, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/home/indika/anaconda3/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/indika/anaconda3/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

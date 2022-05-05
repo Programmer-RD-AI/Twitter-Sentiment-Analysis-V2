@@ -152,7 +152,7 @@ iopath==0.1.8
 ipaddress==1.0.23
 ipykernel==6.2.0
 ipython-genutils==0.2.0
-ipython==7.27.0
+ipython==7.31.1
 ipywidgets==7.6.3
 isort==5.9.3
 itsdangerous==2.0.1
